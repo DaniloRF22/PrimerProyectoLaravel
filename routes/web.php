@@ -29,3 +29,7 @@ Route::get('/', function () {
 /*Route::get('saludo/{nombre?}', function ($nombre = "Invitado") {
     return "Saludos ".$nombre;
 });*/
+
+/*Route::get('/', function () {
+    return "Probando el github";
+});*/
