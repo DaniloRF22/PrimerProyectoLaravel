@@ -12,10 +12,10 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 
 /*Route::get('/', function () {
@@ -30,6 +30,12 @@ Route::get('/', function () {
     return "Saludos ".$nombre;
 });*/
 
-/*Route::get('/', function () {
-    return "Probando el github";
-});*/
+Route::get('/contacto', function () {
+    return "Seccion de contactos";
+})->name('Contacto');
+
+Route::get('/',function(){
+    echo "<a href=". route('Contacto')."> Contacto #1</a><br>";
+    echo "<a href='contacto'> Contacto #2</a><br>";
+    echo "<a href='contacto'> Contacto #3</a><br>";
+});
