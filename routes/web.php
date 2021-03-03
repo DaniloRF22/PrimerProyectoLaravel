@@ -30,7 +30,7 @@ Route::get('/', function () {
     return "Saludos ".$nombre;
 });*/
 
-Route::get('/contacto', function () {
+/*Route::get('/contacto', function () {
     return "Seccion de contactos";
 })->name('Contacto');
 
@@ -38,4 +38,8 @@ Route::get('/',function(){
     echo "<a href=". route('Contacto')."> Contacto #1</a><br>";
     echo "<a href='contacto'> Contacto #2</a><br>";
     echo "<a href='contacto'> Contacto #3</a><br>";
-});
+});*/
+
+Route::get('/', function () {
+    return view('home');
+})->name('home');
