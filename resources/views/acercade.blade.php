@@ -1,8 +1,9 @@
 @extends('plantilla')
 
 @section('Contenido')
-<h1>Contactos</h1>
+<h1>Acerca de</h1>
 @endsection
 
-@section('Titulo', 'Contactos')
+@section('Titulo', 'Acerca de')
+
 

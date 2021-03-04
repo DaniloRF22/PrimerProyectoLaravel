@@ -40,6 +40,16 @@ Route::get('/',function(){
     echo "<a href='contacto'> Contacto #3</a><br>";
 });*/
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-});
+});*/
+
+/*Route::get('/',function(){
+$nombre="Daniel";
+return view('home')->with('nombre',$nombre);
+});*/
+
+route:: view('/','home');
+route:: view('/contactos','contactos');
+route:: view('/acercade','acercade');
+route:: view('/portafolio','portafolio');
