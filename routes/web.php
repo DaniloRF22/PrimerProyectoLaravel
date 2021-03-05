@@ -49,7 +49,14 @@ $nombre="Daniel";
 return view('home')->with('nombre',$nombre);
 });*/
 
+$portafolio = [
+    ['title' => 'Proyecto #1'],
+    ['title' => 'Proyecto #2'],
+    ['title' => 'Proyecto #3'],
+    ['title' => 'Proyecto #4'],
+];
+
 route:: view('/','home');
 route:: view('/contactos','contactos');
 route:: view('/acercade','acercade');
-route:: view('/portafolio','portafolio');
+route:: get('/portafolio','PortController',compact('portafolio'));
